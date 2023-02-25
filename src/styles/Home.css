@@ -11,9 +11,24 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.anime{
+  height: 750px;
+  width: 750px;
+  margin: 100px;
+}
+
+.cover{
+  display: flex;
+  flex-direction: column;
+}
+
 .headerContainer {
   width: auto;
   margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .headerContainer h1 {
@@ -23,11 +38,12 @@
   height: 60px;
   font-weight: 50;
   color: black;
+  margin-bottom: 5px;
 }
 
 .headerContainer p {
   padding: 0;
-  font-size: 40px;
+  font-size: 64px;
   font-weight: lighter;
   color: black;
 }
@@ -38,18 +54,20 @@
   border-radius: 5px;
   cursor: pointer;
   justify-content: center;
-  background-color: #121619;
+  background-color: #0f0f0f;
   height: 50px;
   width: 180px;
   color: white;
   text-decoration: none;
   font-size: 20px;
+  transition: 0.3s ease-in-out;
 }
 
 .headerContainer button:hover {
-  background-color: #07090a;
+  background-color: #000000;
   cursor: pointer;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.05);
 }
 
 @media only screen and (max-width: 650px) {
@@ -57,9 +75,7 @@
     justify-content: center;
     align-items: center;
   }
-  .headerContainer h1,
-  .headerContainer p {
-  }
+ 
 
   .headerContainer {
     margin-left: 0px;

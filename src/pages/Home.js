@@ -10,7 +10,7 @@ function Home() {
         <h1> Pedro's Pizzeria </h1>
         <p> PIZZA TO FIT ANY TASTE</p>
         <Link to="/menu">
-          <button> ORDER NOW </button>
+          <button> SIGN IN </button>
         </Link>
       </div>
     </div>
